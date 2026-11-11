@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PK Hosting Pricing - Shared, WordPress, Reseller, VPS and Dedicated Plans</title>
+<meta name="description" content="PK Hosting pricing in Pakistan. Shared, WordPress, reseller, Cloud VPS, Premium VPS and dedicated server plans with live Black Friday first-year prices and renewal prices in PKR.">
+<style>
+:root{--green:#1aa54a;--green-dark:#0f7a34;--ink:#14201a;--muted:#5a6b60;--line:#e3e9e5;--bg:#f6f9f7;--card:#ffffff;--amber:#b7791f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:var(--green-dark)}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.nav{max-width:1100px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.logo{font-size:22px;font-weight:800;color:var(--ink);text-decoration:none}
+.logo span{color:var(--green)}
+.nav nav{display:flex;gap:18px;flex-wrap:wrap;margin-left:auto}
+.nav nav a{text-decoration:none;color:var(--ink);font-weight:600;font-size:15px}
+.nav nav a:hover{color:var(--green-dark)}
+.hero{background:linear-gradient(135deg,#0f7a34,#1aa54a);color:#fff;padding:44px 20px 36px}
+.hero-inner{max-width:1100px;margin:0 auto}
+.hero h1{font-size:32px;line-height:1.2;margin-bottom:10px}
+.hero p{max-width:720px;opacity:.95;font-size:17px}
+.badge{display:inline-block;background:#fff;color:var(--green-dark);font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px;margin-bottom:12px}
+.controls{max-width:1100px;margin:-18px auto 0;padding:0 20px;position:relative;z-index:2}
+.controls-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;gap:22px;flex-wrap:wrap;align-items:flex-end;box-shadow:0 6px 24px rgba(20,32,26,.08)}
+.control-group label{display:block;font-weight:700;font-size:13px;margin-bottom:8px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.toggle button{border:0;background:#fff;padding:10px 22px;font-size:15px;font-weight:700;cursor:pointer;color:var(--ink)}
+.toggle button[aria-pressed="true"]{background:var(--green);color:#fff}
+.promo-row{display:flex;gap:8px}
+.promo-row input{border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:15px;min-width:200px}
+.promo-row button,.btn{background:var(--green);color:#fff;border:0;border-radius:8px;padding:10px 18px;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+.promo-row button:hover,.btn:hover{background:var(--green-dark)}
+.promo-msg{font-size:14px;margin-top:8px;min-height:20px}
+.promo-msg.ok{color:var(--green-dark);font-weight:600}
+.promo-msg.info{color:var(--muted)}
+main{max-width:1100px;margin:0 auto;padding:28px 20px 40px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.tabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 16px;font-size:14px;font-weight:700;cursor:pointer;color:var(--ink)}
+.tabs button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column}
+.card.featured{border:2px solid var(--green)}
+.tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--green-dark);margin-bottom:6px}
+.tag.pop{background:var(--green);color:#fff;padding:3px 10px;border-radius:999px}
+.card h3{font-size:20px;margin-bottom:4px}
+.card .blurb{color:var(--muted);font-size:14px;margin-bottom:14px}
+.price{font-size:34px;font-weight:800;line-height:1.1}
+.price small{font-size:15px;font-weight:600;color:var(--muted)}
+.was{color:var(--muted);font-size:14px}
+.was s{margin-right:6px}
+.renew{font-size:14px;color:var(--muted);margin:4px 0 14px}
+.card ul{list-style:none;margin-bottom:18px;flex:1}
+.card ul li{padding:6px 0 6px 24px;position:relative;font-size:14px;border-top:1px solid #f0f4f1}
+.card ul li:first-child{border-top:0}
+.card ul li::before{content:"\2713";position:absolute;left:2px;color:var(--green);font-weight:800}
+.card .btn{text-align:center}
+.save-note{font-size:13px;color:var(--amber);font-weight:700;margin-top:10px}
+section.table-wrap{margin-top:36px}
+section.table-wrap h2{font-size:22px;margin-bottom:6px}
+section.table-wrap p{color:var(--muted);margin-bottom:14px}
+.table-scroll{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:640px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#f0f5f2;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+tr:last-child td{border-bottom:0}
+td .p{font-weight:700}
+.domains{margin-top:36px}
+.domains h2{font-size:22px;margin-bottom:6px}
+.domains p{color:var(--muted);margin-bottom:14px}
+.domain-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.domain{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.domain .tld{font-size:18px;font-weight:800}
+.domain .dprice{font-size:15px;margin-top:4px}
+.domain .drenew{font-size:13px;color:var(--muted)}
+.notes{margin-top:36px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+.notes h2{font-size:20px;margin-bottom:10px}
+.notes ul{margin-left:20px}
+.notes li{margin-bottom:6px}
+footer{background:#14201a;color:#cfe0d4;padding:28px 20px;margin-top:20px}
+footer .inner{max-width:1100px;margin:0 auto;font-size:14px}
+footer a{color:#fff}
+footer p{margin-bottom:6px}
+.source-note{font-size:13px;color:var(--muted);margin-top:24px}
+@media (max-width:640px){
+  .hero h1{font-size:26px}
+  .price{font-size:30px}
+  .controls-card{flex-direction:column;align-items:stretch}
+  .promo-row input{flex:1;min-width:0}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="https://www.pkhosting.com/">PK<span>Hosting</span></a>
+    <nav>
+      <a href="https://www.pkhosting.com/">Home</a>
+      <a href="https://www.pkhosting.com/pricing/">Pricing</a>
+      <a href="https://www.pkhosting.com/domains/">Domains</a>
+      <a href="https://www.pkhosting.com/about">About</a>
+      <a href="https://www.pkhosting.com/contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="badge">Black Friday prices live</span>
+    <h1>Hosting pricing in Pakistan, in PKR, with no hidden figures</h1>
+    <p>Every price below is the live price from pkhosting.com, checked 11 November 2026. First-year prices are Black Friday prices. Renewal prices are shown next to each plan. Switch between annual and monthly billing to see both.</p>
+  </div>
+</div>
+
+<div class="controls">
+  <div class="controls-card">
+    <div class="control-group">
+      <label id="billing-label">Billing term</label>
+      <div class="toggle" role="group" aria-labelledby="billing-label">
+        <button type="button" id="btn-annual" aria-pressed="true">Annual</button>
+        <button type="button" id="btn-monthly" aria-pressed="false">Monthly</button>
+      </div>
+    </div>
+    <div class="control-group">
+      <label for="promo-input">Promo code</label>
+      <div class="promo-row">
+        <input type="text" id="promo-input" placeholder="Enter promo code" autocomplete="off">
+        <button type="button" id="promo-apply">Apply</button>
+      </div>
+      <p class="promo-msg info" id="promo-msg" role="status"></p>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="tabs" id="category-tabs" role="group" aria-label="Plan category"></div>
+  <div class="cards" id="plan-cards"></div>
+
+  <section class="table-wrap">
+    <h2 id="table-title">Compare plans</h2>
+    <p id="table-note">One data source drives these cards and this table, so the two can never disagree.</p>
+    <div class="table-scroll">
+      <table id="plan-table">
+        <thead id="plan-thead"></thead>
+        <tbody id="plan-tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="domains">
+    <h2>Popular domain prices</h2>
+    <p>Registration prices from the same live billing catalogue as pkhosting.com/domains/.</p>
+    <div class="domain-grid" id="domain-grid"></div>
+  </section>
+
+  <section class="notes">
+    <h2>Good to know before you order</h2>
+    <ul>
+      <li>Free migration is included on shared, WordPress and reseller plans.</li>
+      <li>Free SSL certificate is included on shared, WordPress and reseller plans.</li>
+      <li>Shared hosting includes a free .com with a 3-year term. WordPress plans do not include a free .com.</li>
+      <li>Daily backups are included. Backup retention is 1 day on Personal, 3 days on Business and 5 days on Professional.</li>
+      <li>Pay in PKR by JazzCash, Easypaisa, bank transfer, card or PayPal.</li>
+      <li>First-time shared and WordPress orders may be reviewed for a refund when you contact PK Hosting within 7 days of payment. See pkhosting.com/refund/ for the full policy.</li>
+      <li>Dedicated server prices are starting budgets. Exact hardware is confirmed in writing before payment.</li>
+      <li>Support: (042) 35692952, support@pkhosting.com, Monday to Friday 9am to 6pm PKT.</li>
+    </ul>
+  </section>
+
+  <p class="source-note">Prices verified live from https://www.pkhosting.com/pricing/ on 11 November 2026. Monthly prices are the annual price x 1.2 / 12, the site's own monthly-billing rule. No promo code is currently active, so no discount is applied on this page.</p>
+</main>
+
+<footer>
+  <div class="inner">
+    <p><strong>PK Hosting</strong> - a product of TechAbout (Private) Limited</p>
+    <p>231-B Main Boulevard, Phase 8 DHA, Lahore, Pakistan</p>
+    <p>Phone: (042) 35692952 &nbsp;|&nbsp; Email: <a href="mailto:support@pkhosting.com">support@pkhosting.com</a> &nbsp;|&nbsp; Website: <a href="https://www.pkhosting.com/">pkhosting.com</a></p>
+    <p>This is a pricing demo page built for PK Hosting. Prices are taken from the live PK Hosting website. Checkout happens on pkhosting.com.</p>
+  </div>
+</footer>
+
+<script>
+"use strict";
+/* ONE DATA SOURCE: every plan card and every table row on this page is
+   rendered from this single PLANS object. Change a price here and both
+   the cards and the table change together. */
+const PLANS = {
+  categories: [
+    {
+      id: "shared", label: "Shared Hosting",
+      blurb: "Website hosting for personal sites, business websites and professional hosting.",
+      columns: [
+        { key: "name", label: "Plan" },
+        { key: "first", label: "First year" },
+        { key: "renew", label: "Renews at" },
+        { key: "sites", label: "Websites" },
+        { key: "storage", label: "Storage" },
+        { key: "emails", label: "Email accounts" },
+        { key: "backups", label: "Backups" }
+      ],
+      plans: [
+        { name: "Personal", tag: "Economical", blurb: "For students, hobbyists and individuals",
+          firstYear: 4490, renew: 6990, discount: "36% off",
+          features: ["Free migration", "1 Website", "5 GB SSD Storage", "Unmetered bandwidth, fair-use policy", "5 Email Accounts", "Free .com with a 3-year term", "Free SSL Certificate", "Daily backups, 1-day retention", "WordPress Setup Help"],
+          sites: "1", storage: "5 GB SSD", emails: "5", backups: "Daily, 1-day retention" },
+        { name: "Business", tag: "Most Popular", blurb: "For growing businesses and teams",
+          firstYear: 11990, renew: 19990, discount: "40% off", featured: true,
+          features: ["Free migration", "5 Websites", "25 GB SSD Storage", "Unmetered bandwidth, fair-use policy", "25 Email Accounts", "Free .com with a 3-year term", "Free SSL Certificate", "Daily backups, 3-day retention", "Priority Setup"],
+          sites: "5", storage: "25 GB SSD", emails: "25", backups: "Daily, 3-day retention" },
+        { name: "Professional", tag: "Best Value", blurb: "For software houses and corporates",
+          firstYear: 23990, renew: 39990, discount: "40% off",
+          features: ["Free migration", "10 Websites", "50 GB SSD Storage", "Unmetered bandwidth, fair-use policy", "50 Email Accounts", "Free .com with a 3-year term", "Free SSL Certificate", "Daily backups, 5-day retention", "Staging tools", "Priority Support"],
+          sites: "10", storage: "50 GB SSD", emails: "50", backups: "Daily, 5-day retention" }
+      ]
+    },
+    {
+      id: "wordpress", label: "WordPress Hosting",
+      blurb: "Tuned for WordPress: one-click install, free SSL and daily backups.",
+      columns: [
+        { key: "name", label: "Plan" },
+        { key: "first", label: "First year" },
+        { key: "renew", label: "Renews at" },
+        { key: "sites", label: "WordPress sites" },
+        { key: "storage", label: "Storage" },
+        { key: "emails", label: "Extras" },
+        { key: "backups", label: "Backups" }
+      ],
+      plans: [
+        { name: "WP Starter", tag: "Economical", blurb: "For a single WordPress site",
+          firstYear: 5990, renew: 9999, discount: "40% off",
+          features: ["Free migration", "1 WordPress Website", "7 GB SSD Storage", "Unmetered bandwidth, fair-use policy", "Free SSL Certificate", "1-Click WordPress Install", "Email + Database Support"],
+          sites: "1", storage: "7 GB SSD", emails: "1-Click install", backups: "Daily copies in dashboard" },
+        { name: "WP Business", tag: "Most Popular", blurb: "For growing sites and small agencies",
+          firstYear: 12990, renew: 19999, discount: "35% off", featured: true,
+          features: ["Free migration", "3 WordPress Websites", "20 GB SSD Storage", "Unmetered bandwidth, fair-use policy", "Free SSL Certificate", "1-Click WordPress Install", "Priority Setup and Support"],
+          sites: "3", storage: "20 GB SSD", emails: "1-Click install", backups: "Daily copies in dashboard" },
+        { name: "WP Pro", tag: "Best Value", blurb: "For studios running many WordPress sites",
+          firstYear: 24990, renew: 39999, discount: "38% off",
+          features: ["Free migration", "10 WordPress Websites", "30 GB SSD Storage", "Unmetered bandwidth, fair-use policy", "Free SSL Certificate", "1-Click WordPress Install", "Priority Support"],
+          sites: "10", storage: "30 GB SSD", emails: "1-Click install", backups: "Daily copies in dashboard" }
+      ]
+    },
+    {
+      id: "reseller", label: "Reseller Hosting",
+      blurb: "For agencies and developers who need branded hosting accounts.",
+      columns: [
+        { key: "name", label: "Plan" },
+        { key: "first", label: "First year" },
+        { key: "renew", label: "Renews at" },
+        { key: "sites", label: "Storage" },
+        { key: "storage", label: "Platform" },
+        { key: "emails", label: "Nameservers" },
+        { key: "backups", label: "Support" }
+      ],
+      plans: [
+        { name: "Reseller R1", tag: "Starter", blurb: "Launch your hosting brand",
+          firstYear: 11990, renew: 14990, discount: "20% off",
+          features: ["Free migration", "25 GB SSD Storage", "Unmetered bandwidth, fair-use policy", "Managed Hosting Platform", "Client Dashboard", "Private Nameservers", "Free SSL for All Accounts"],
+          sites: "25 GB SSD", storage: "Managed platform", emails: "Private", backups: "Standard support" },
+        { name: "Reseller R2", tag: "Most Popular", blurb: "Best storage-to-price fit for a growing client list",
+          firstYear: 23990, renew: 29990, discount: "20% off", featured: true,
+          features: ["Free migration", "60 GB SSD Storage", "Unmetered bandwidth, fair-use policy", "Managed Hosting Platform", "Client Dashboard", "Private Nameservers", "Free SSL for All Accounts", "Priority Support"],
+          sites: "60 GB SSD", storage: "Managed platform", emails: "Private", backups: "Priority support" },
+        { name: "Reseller R3", tag: "High Capacity", blurb: "Highest reseller capacity for established agencies",
+          firstYear: 39990, renew: 49990, discount: "20% off",
+          features: ["Free migration", "120 GB SSD Storage", "Unmetered bandwidth, fair-use policy", "Managed Hosting Platform", "Client Dashboard", "Private Nameservers", "Free SSL for All Accounts", "Dedicated IP on Request"],
+          sites: "120 GB SSD", storage: "Managed platform", emails: "Private", backups: "Standard support" }
+      ]
+    },
+    {
+      id: "cloudvps", label: "Cloud VPS (Europe)",
+      blurb: "Fast SSD storage on the European network, Germany (Nuremberg).",
+      columns: [
+        { key: "name", label: "Plan" },
+        { key: "first", label: "First year" },
+        { key: "renew", label: "Renews at" },
+        { key: "sites", label: "vCPU" },
+        { key: "storage", label: "RAM" },
+        { key: "emails", label: "Storage" },
+        { key: "backups", label: "Port speed" }
+      ],
+      plans: [
+        { name: "Cloud VPS Starter", tag: "Best Value", blurb: "Best-value entry VPS",
+          firstYear: 32990, renew: 38490, discount: "14% off",
+          features: ["4 vCPU", "8 GB RAM", "100 GB SSD (upgradable)", "200 Mbit/s port", "Unmetered transfer, no GB quota", "Root / SSH included", "IPv4 + IPv6 included"],
+          sites: "4", storage: "8 GB", emails: "100 GB SSD", backups: "200 Mbit/s" },
+        { name: "Cloud VPS Business", tag: "Most Popular", blurb: "Production workloads",
+          firstYear: 49490, renew: 54990, discount: "10% off", featured: true,
+          features: ["6 vCPU", "12 GB RAM", "200 GB SSD (upgradable)", "300 Mbit/s port", "Unmetered transfer, no GB quota", "Root / SSH included", "IPv4 + IPv6 included"],
+          sites: "6", storage: "12 GB", emails: "200 GB SSD", backups: "300 Mbit/s" },
+        { name: "Cloud VPS Pro", tag: "High Memory", blurb: "High-memory applications",
+          firstYear: 76990, renew: 87990, discount: "13% off",
+          features: ["8 vCPU", "24 GB RAM", "300 GB SSD (upgradable)", "600 Mbit/s port", "Unmetered transfer, no GB quota", "Root / SSH included", "IPv4 + IPv6 included"],
+          sites: "8", storage: "24 GB", emails: "300 GB SSD", backups: "600 Mbit/s" },
+        { name: "Cloud VPS Elite", tag: "Power", blurb: "Heavy workloads",
+          firstYear: 137490, renew: 153990, discount: "11% off",
+          features: ["12 vCPU", "48 GB RAM", "400 GB SSD (upgradable)", "800 Mbit/s port", "Unmetered transfer, no GB quota", "Root / SSH included", "IPv4 + IPv6 included"],
+          sites: "12", storage: "48 GB", emails: "400 GB SSD", backups: "800 Mbit/s" },
+        { name: "Cloud VPS Max", tag: "Power", blurb: "Large-scale applications",
+          firstYear: 197990, renew: 219990, discount: "10% off",
+          features: ["16 vCPU", "64 GB RAM", "500 GB SSD (upgradable)", "1 Gbit/s port", "Unmetered transfer, no GB quota", "Root / SSH included", "IPv4 + IPv6 included"],
+          sites: "16", storage: "64 GB", emails: "500 GB SSD", backups: "1 Gbit/s" },
+        { name: "Cloud VPS Ultra", tag: "Maximum", blurb: "Maximum performance",
+          firstYear: 263990, renew: 296990, discount: "11% off",
+          features: ["18 vCPU", "96 GB RAM", "600 GB SSD (upgradable)", "1 Gbit/s port", "Unmetered transfer, no GB quota", "Root / SSH included", "IPv4 + IPv6 included"],
+          sites: "18", storage: "96 GB", emails: "600 GB SSD", backups: "1 Gbit/s" }
+      ]
+    },
+    {
+      id: "premiumvps", label: "Premium VPS (Virginia, US)",
+      blurb: "NVMe storage with daily backup included, Virginia, United States.",
+      columns: [
+        { key: "name", label: "Plan" },
+        { key: "first", label: "First year" },
+        { key: "renew", label: "Renews at" },
+        { key: "sites", label: "vCPU" },
+        { key: "storage", label: "RAM" },
+        { key: "emails", label: "Storage" },
+        { key: "backups", label: "Port speed" }
+      ],
+      plans: [
+        { name: "Premium VPS Nano", tag: "Entry", blurb: "Small apps on premium US network",
+          firstYear: 29690, renew: 32990, discount: "10% off",
+          features: ["2 vCPU", "4 GB RAM", "40 GB NVMe", "500 Mbit/s port", "Anti-DDoS + included daily snapshot", "Root / SSH included"],
+          sites: "2", storage: "4 GB", emails: "40 GB NVMe", backups: "500 Mbit/s" },
+        { name: "Premium VPS Starter", tag: "Premium", blurb: "Premium 8 GB US network",
+          firstYear: 43990, renew: 49490, discount: "11% off",
+          features: ["4 vCPU", "8 GB RAM", "75 GB NVMe", "1 Gbit/s port", "Anti-DDoS + included daily snapshot", "Root / SSH included"],
+          sites: "4", storage: "8 GB", emails: "75 GB NVMe", backups: "1 Gbit/s" },
+        { name: "Premium VPS Pro", tag: "Premium", blurb: "Premium 12 GB US network",
+          firstYear: 60490, renew: 65990, discount: "8% off",
+          features: ["6 vCPU", "12 GB RAM", "100 GB NVMe", "2 Gbit/s port", "Anti-DDoS + included daily snapshot", "Root / SSH included"],
+          sites: "6", storage: "12 GB", emails: "100 GB NVMe", backups: "2 Gbit/s" },
+        { name: "Premium VPS Max", tag: "Premium", blurb: "Premium 24 GB US network",
+          firstYear: 115489, renew: 126489, discount: "9% off",
+          features: ["8 vCPU", "24 GB RAM", "200 GB NVMe", "3 Gbit/s port", "Anti-DDoS + included daily snapshot", "Root / SSH included"],
+          sites: "8", storage: "24 GB", emails: "200 GB NVMe", backups: "3 Gbit/s" }
+      ]
+    },
+    {
+      id: "dedicated", label: "Dedicated Servers",
+      blurb: "Bare-metal server tiers. Starting budgets only, exact hardware confirmed in writing before payment.",
+      columns: [
+        { key: "name", label: "Plan" },
+        { key: "first", label: "First year" },
+        { key: "renew", label: "Renews at" },
+        { key: "sites", label: "Typical minimum" },
+        { key: "storage", label: "Location" },
+        { key: "emails", label: "Network" },
+        { key: "backups", label: "Access" }
+      ],
+      plans: [
+        { name: "Dedicated Entry", tag: "Starter", blurb: "Bare-metal starter",
+          firstYear: 224991, renew: 249990, discount: "10% off",
+          features: ["Typical minimum: 4 physical cores / 32 GB RAM / 2x480 GB SSD", "1 Gbps network", "1 IPv4, Germany (Nuremberg)", "Root / SSH access included", "Linux, Windows by license", "Managed option available"],
+          sites: "4 cores / 32 GB RAM / 2x480 GB SSD", storage: "Germany (Nuremberg)", emails: "1 Gbps", backups: "Root / SSH" },
+        { name: "Dedicated Business", tag: "Popular", blurb: "Heavier production workloads",
+          firstYear: 251991, renew: 279990, discount: "10% off",
+          features: ["Typical minimum: 8 physical cores / 64 GB RAM / 2x960 GB NVMe", "1 Gbps network", "1 IPv4, Germany (Nuremberg)", "Root / SSH access included", "Linux, Windows by license", "Managed option available"],
+          sites: "8 cores / 64 GB RAM / 2x960 GB NVMe", storage: "Germany (Nuremberg)", emails: "1 Gbps", backups: "Root / SSH" },
+        { name: "Dedicated Enterprise", tag: "Full service", blurb: "For larger production workloads",
+          firstYear: 404991, renew: 449990, discount: "10% off",
+          features: ["Typical minimum: 16 physical cores / 128 GB RAM / 2x1.92 TB NVMe", "1 Gbps+ network", "1 IPv4, Germany (Nuremberg)", "Root / SSH access included", "Linux, Windows by license", "Managed option: Priority"],
+          sites: "16 cores / 128 GB RAM / 2x1.92 TB NVMe", storage: "Germany (Nuremberg)", emails: "1 Gbps+", backups: "Root / SSH" }
+      ]
+    }
+  ],
+  domains: [
+    { tld: ".com", first: 3299, firstUnit: "/yr", renew: 3762, renewUnit: "/yr", note: "Black Friday, was Rs 3,762" },
+    { tld: ".pk", first: 3899, firstUnit: "/2yr", renew: 5460, renewUnit: "/2yr", note: "Minimum 2-year term" },
+    { tld: ".com.pk", first: 3899, firstUnit: "/2yr", renew: 5460, renewUnit: "/2yr", note: "Minimum 2-year term" },
+    { tld: ".net", first: 4265, firstUnit: "/yr", renew: 4265, renewUnit: "/yr", note: "" },
+    { tld: ".org", first: 3956, firstUnit: "/yr", renew: 4028, renewUnit: "/yr", note: "" },
+    { tld: ".io", first: 17981, firstUnit: "/yr", renew: 17981, renewUnit: "/yr", note: "" },
+    { tld: ".co", first: 5394, firstUnit: "/yr", renew: 10788, renewUnit: "/yr", note: "" },
+    { tld: ".shop", first: 543, firstUnit: "/yr", renew: 10860, renewUnit: "/yr", note: "Black Friday, ends 31 Dec 2026" }
+  ]
+};
+
+/* Monthly billing follows the site's own rule: annual price x 1.2 / 12. */
+function monthlyFromAnnual(annual){ return Math.round(annual * 1.2 / 12); }
+function fmt(n){ return "Rs " + n.toLocaleString("en-US"); }
+
+let billing = "annual";
+let category = "shared";
+
+const $ = (id) => document.getElementById(id);
+
+function priceHTML(plan){
+  if (billing === "annual"){
+    return '<div class="was">Black Friday ' + plan.discount + ' <s>' + fmt(plan.renew) + '</s></div>'
+      + '<div class="price">' + fmt(plan.firstYear) + ' <small>/yr</small></div>'
+      + '<p class="renew">First year ' + fmt(plan.firstYear) + ' · Renews at ' + fmt(plan.renew) + ' for the same term.</p>';
+  }
+  const m = monthlyFromAnnual(plan.firstYear);
+  const rm = monthlyFromAnnual(plan.renew);
+  return '<div class="was">Black Friday ' + plan.discount + ' <s>' + fmt(rm) + ' /mo</s></div>'
+    + '<div class="price">' + fmt(m) + ' <small>/mo</small></div>'
+    + '<p class="renew">First year ' + fmt(m) + ' /mo · Renews at ' + fmt(rm) + ' /mo. Billed monthly.</p>';
+}
+
+function cellValue(plan, key){
+  if (key === "name") return '<span class="p">' + plan.name + '</span>';
+  if (key === "first") return billing === "annual" ? fmt(plan.firstYear) + " /yr" : fmt(monthlyFromAnnual(plan.firstYear)) + " /mo";
+  if (key === "renew") return billing === "annual" ? fmt(plan.renew) + " /yr" : fmt(monthlyFromAnnual(plan.renew)) + " /mo";
+  return plan[key] || "";
+}
+
+function renderTabs(){
+  const wrap = $("category-tabs");
+  wrap.innerHTML = "";
+  PLANS.categories.forEach((cat) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = cat.label;
+    b.setAttribute("aria-pressed", cat.id === category ? "true" : "false");
+    b.addEventListener("click", () => { category = cat.id; renderAll(); });
+    wrap.appendChild(b);
+  });
+}
+
+function renderCards(){
+  const cat = PLANS.categories.find((c) => c.id === category);
+  const wrap = $("plan-cards");
+  wrap.innerHTML = "";
+  cat.plans.forEach((plan) => {
+    const card = document.createElement("article");
+    card.className = "card" + (plan.featured ? " featured" : "");
+    const tagCls = plan.featured ? "tag pop" : "tag";
+    const feats = plan.features.map((f) => "<li>" + f + "</li>").join("");
+    card.innerHTML =
+      '<span class="' + tagCls + '">' + plan.tag + '</span>'
+      + "<h3>" + plan.name + "</h3>"
+      + '<p class="blurb">' + plan.blurb + "</p>"
+      + priceHTML(plan)
+      + "<ul>" + feats + "</ul>"
+      + '<a class="btn" href="https://www.pkhosting.com/pricing/">Order Now</a>'
+      + (plan.firstYear < plan.renew ? '<p class="save-note">You save ' + fmt(plan.renew - plan.firstYear) + ' in the first year</p>' : "");
+    wrap.appendChild(card);
+  });
+}
+
+function renderTable(){
+  const cat = PLANS.categories.find((c) => c.id === category);
+  $("table-title").textContent = "Compare " + cat.label + " plans";
+  $("table-note").textContent = cat.blurb + " One data source drives these cards and this table, so the two can never disagree.";
+  const thead = $("plan-thead");
+  const tbody = $("plan-tbody");
+  thead.innerHTML = "<tr>" + cat.columns.map((col) => "<th>" + col.label + "</th>").join("") + "</tr>";
+  tbody.innerHTML = "";
+  cat.plans.forEach((plan) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = cat.columns.map((col) => "<td>" + cellValue(plan, col.key) + "</td>").join("");
+    tbody.appendChild(tr);
+  });
+}
+
+function renderDomains(){
+  const wrap = $("domain-grid");
+  wrap.innerHTML = "";
+  PLANS.domains.forEach((d) => {
+    const div = document.createElement("div");
+    div.className = "domain";
+    div.innerHTML = '<div class="tld">' + d.tld + '</div>'
+      + '<div class="dprice">Registration ' + fmt(d.first) + d.firstUnit + '</div>'
+      + '<div class="drenew">Renew ' + fmt(d.renew) + d.renewUnit + (d.note ? ' · ' + d.note : '') + '</div>';
+    wrap.appendChild(div);
+  });
+}
+
+function setBilling(mode){
+  billing = mode;
+  $("btn-annual").setAttribute("aria-pressed", mode === "annual" ? "true" : "false");
+  $("btn-monthly").setAttribute("aria-pressed", mode === "monthly" ? "true" : "false");
+  renderCards();
+  renderTable();
+}
+
+function renderAll(){ renderTabs(); renderCards(); renderTable(); }
+
+$("btn-annual").addEventListener("click", () => setBilling("annual"));
+$("btn-monthly").addEventListener("click", () => setBilling("monthly"));
+
+$("promo-apply").addEventListener("click", () => {
+  const code = $("promo-input").value.trim();
+  const msg = $("promo-msg");
+  if (!code){
+    msg.textContent = "Enter a promo code first.";
+    msg.className = "promo-msg info";
+    return;
+  }
+  msg.textContent = "No promo code is currently active. The code '" + code + "' gives no discount. Prices shown are the live Black Friday prices from pkhosting.com.";
+  msg.className = "promo-msg info";
+});
+
+/* Deep link for testing and sharing: ?billing=monthly */
+const params = new URLSearchParams(window.location.search);
+if (params.get("billing") === "monthly"){ setBilling("monthly"); }
+
+renderTabs();
+renderCards();
+renderTable();
+renderDomains();
+</script>
+</body>
+</html>
